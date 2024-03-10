@@ -9,17 +9,30 @@
   <!-- Include Daisy UI -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <style>
+    .font-manrope {
+      font-family: "Manrope", sans-serif;
+}
+
+  </style>
 </head>
 <body>
     <header class="mx-20">
-        <div class="navbar bg-base-100 lg:hidden">
+        <div class="navbar bg-base-100">
             <div class="navbar-start">
                 <div class="lg:hidden">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost">
                           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </div>
-                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <ul tabindex="0" class="font-manrope menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                           <li><a>Item 1</a></li>
                           <li>
                             <a>Parent</a>
@@ -32,11 +45,11 @@
                         </ul>
                       </div>
                 </div>
-              <div>Hockey<span>'</span>s</div>
+              <div class="font-bold text-xl font-manrope">Hockey<span class="text-red-500">'</span>s</div>
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
+                <li><a class="text-red-500">Home</a></li>
                 <li><a>About</a></li>
                 <li><a>Pages</a></li>
                 <li><a>Blog</a></li>
@@ -47,7 +60,7 @@
                 <div class="hidden lg:block">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-              <a class="btn">Button</a>
+              <a class="btn bg-red-500 text-white">Button</a>
             </div>
           </div>
     </header>
@@ -84,83 +97,493 @@
             </div>
             <div class="hidden lg:block lg:absolute w-96 right-5 bottom-0">
                 <div class="text-center bg-black text-white p-5 rounded-md my-4">
-                    <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, esse!</h3>
-                    <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+                    <h3 class="font-manrope text-xl">Meet all the heroes from the field</h3>
+                    <p class="font-manrope text-base">Amidst towering skyscrapers, a hero emerges—a beacon of hope in the heart of the city, inspiring greatness in others.</p>
                   </div>
             </div>
             
           </div>
           <div class="lg:hidden">
             <div class="text-center bg-black text-white p-5 rounded-md my-4">
-                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, esse!</h3>
-                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+              <h3 class="font-manrope text-xl">Meet all the heroes from the field</h3>
+              <p class="font-manrope text-base">Amidst towering skyscrapers, a hero emerges—a beacon of hope in the heart of the city, inspiring greatness in others.</p>
               </div>
         </div>
-        <div class="border-dashed border-b-2 border-t-2 p-4 mt-8 mb-8 border-gray-300">
+        <div class="border-dashed border-b-2 border-t-2 p-4 mt-8 mb-8 border-gray-300 text-center">
+          <p class="text-2xl fon-weight-500">
+            Professional Hockeys Club
+          </p>
             This element has a dashed border only on the bottom (2px thickness)
           </div>
 
         <div class="lg:flex">
             <div class="flex flex-col items-center text-center">
                 <div>
-                    <div class="radial-progress" style="--value:87;" role="progressbar">87%</div>
+                    <div class="radial-progress text-red-500" style="--value:87;" role="progressbar">87%</div>
                 </div>
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h3 class="font-bold">Elite Legend</h3>
+                <p>The pinnacle of hockey greatness, a true icon of the game.</p>
             </div>
             <div class="flex flex-col items-center text-center">
                 <div>
-                    <div class="radial-progress" style="--value:95;" role="progressbar">95%</div>
+                    <div class="radial-progress text-green-500" style="--value:95;" role="progressbar">95%</div>
                 </div>
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h3 class="font-bold">Superstar</h3>
+                <p>A dominant force on the ice, feared by opponents and revered by fans.</p>
             </div>
             <div class="flex flex-col items-center text-center">
                 <div>
-                    <div class="radial-progress" style="--value:90;" role="progressbar">90%</div>
+                    <div class="radial-progress text-blue-500" style="--value:90;" role="progressbar">90%</div>
                 </div>
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h3 class="font-bold">Skilled</h3>
+                <p>A reliable and capable player, a valuable asset to any team.</p>
             </div>
             <div class="flex flex-col items-center text-center">
                 <div>
                     <div class="radial-progress" style="--value:80;" role="progressbar">80%</div>
                 </div>
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h3 class="font-bold">Novice</h3>
+                <p>A player with potential, ready to learn and grow in the game.</p>
             </div>
         </div>
-        <div class="border-dashed border-b-2 border-t-2 p-4 mt-8 mb-8 border-gray-300">
+        <div class="border-dashed border-b-2 border-t-2 p-4 mt-8 mb-8 border-gray-300 text-center">
+          <p class="text-2xl font-bold">
+            Program Section
+          </p>
             This element has a dashed border only on the bottom (2px thickness)
           </div>
-    </main>
-    
-  <div class="container mx-20 p-1">
-    <h1 class="text-3xl font-bold mb-4">Daisy UI Example</h1>
-
-    <!-- Button -->
-    <button class="btn btn-primary">Primary Button</button>
-    <button class="btn btn-secondary">Secondary Button</button>
-
-    <!-- Alert -->
-    <div class="alert alert-success my-4">
       <div>
-        <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-        <span>This is a success alert!</span>
-      </div>
-    </div>
-
-    <!-- Card -->
-    <div class="card w-96 bg-base-100 shadow-xl">
-      <figure><img src="https://placeimg.com/400/225/arch" alt="Card Image" /></figure>
-      <div class="card-body">
-        <h2 class="card-title">Card Title</h2>
-        <p>This is a sample card description.</p>
-        <div class="card-actions justify-end">
-          <button class="btn btn-primary">Learn More</button>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div class="w-full">
+          <div class="card bg-base-100 shadow-xl image-full">
+            <figure><img src="image/2.png" alt="Shoes" /></figure>
+            <div class="card-body lg:mt-20">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-start">
+                <button class="btn bg-red-500">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full">
+          <div class="card bg-base-100 shadow-xl image-full">
+            <figure><img src="image/3.png" alt="Shoes" /></figure>
+            <div class="card-body lg:mt-20">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-start">
+                <button class="btn bg-red-500">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full lg:col-span-2">
+          <div class="card w-full shadow-xl image-full">
+            <figure><img src="image/4.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-start">
+                <button class="btn bg-red-500">Buy Now</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+
+      <div class="border-dashed border-b-2 border-t-2 p-4 mt-8 mb-8 border-gray-300 text-center">
+          <p class="text-2xl font-bold">
+            Our New Product
+          </p>
+            This element has a dashed border only on the bottom (2px thickness)
+          </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+        <div class="card lg:card-side bg-base-100 shadow-xl border p-3">
+          <figure class="rounded-md"><img src="image/5.png" alt="Movie" class="w-full"/></figure>
+          <div class="flex flex-col flex-auto justify-between gap-4 p-2">
+            <div class="flex gap-2">
+              <div class="flex items-center justify-center gap-1">
+                <i class="fa-solid fa-star text-red-500"></i>
+                <p>5.0</p>
+              </div>
+              <div class="flex items-center justify-center gap-1">
+                <i class="fa-solid fa-eye"></i>
+                 <p>20</p>
+              </div>
+              <div>
+                <div class="flex items-center justify-center gap-1">
+                  <i class="fa-regular fa-heart"></i>
+                   <p>200</p>
+                </div>
+              </div>
+            </div>
+            <h2 class="card-title">New movie is released!</h2>
+            <p>Click the button to watch on Jetflix app.</p>
+            <div class="flex gap-1">
+              <h2 class="text-red-500">Price-$22.00</h2>
+              <div class="flex items-center justify-center gap-1">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>
+                  Delivery Fee: Free
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card lg:card-side bg-base-100 shadow-xl border p-3">
+          <figure class="rounded-md"><img src="image/10.png" alt="Movie" class="w-full"/></figure>
+          <div class="flex flex-col flex-auto justify-between gap-4 p-2">
+            <div class="flex gap-2">
+              <div class="flex items-center justify-center gap-1">
+                <i class="fa-solid fa-star text-red-500"></i>
+                <p>5.0</p>
+              </div>
+              <div class="flex items-center justify-center gap-1">
+                <i class="fa-solid fa-eye"></i>
+                 <p>20</p>
+              </div>
+              <div>
+                <div class="flex items-center justify-center gap-1">
+                  <i class="fa-regular fa-heart"></i>
+                   <p>200</p>
+                </div>
+              </div>
+            </div>
+            <h2 class="card-title">New movie is released!</h2>
+            <p>Click the button to watch on Jetflix app.</p>
+            <div class="flex gap-1">
+              <h2 class="text-red-500">Price-$22.00</h2>
+              <div class="flex items-center justify-center gap-1">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>
+                  Delivery Fee: Free
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card lg:card-side bg-base-100 shadow-xl border p-3">
+          <figure class="rounded-md"><img src="image/6.png" alt="Movie" class="w-full"/></figure>
+          <div class="flex flex-col flex-auto justify-between gap-4 p-2">
+            <div class="flex gap-2">
+              <div class="flex items-center justify-center gap-1">
+                <i class="fa-solid fa-star text-red-500"></i>
+                <p>5.0</p>
+              </div>
+              <div class="flex items-center justify-center gap-1">
+                <i class="fa-solid fa-eye"></i>
+                 <p>20</p>
+              </div>
+              <div>
+                <div class="flex items-center justify-center gap-1">
+                  <i class="fa-regular fa-heart"></i>
+                   <p>200</p>
+                </div>
+              </div>
+            </div>
+            <h2 class="card-title">New movie is released!</h2>
+            <p>Click the button to watch on Jetflix app.</p>
+            <div class="flex gap-1">
+              <h2 class="text-red-500">Price-$22.00</h2>
+              <div class="flex items-center justify-center gap-1">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>
+                  Delivery Fee: Free
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card lg:card-side bg-base-100 shadow-xl border p-3">
+          <figure class="rounded-md"><img src="image/7.png" alt="Movie" class="w-full"/></figure>
+          <div class="flex flex-col flex-auto justify-between gap-4 p-2">
+            <div class="flex gap-2">
+              <div class="flex items-center justify-center gap-1">
+                <i class="fa-solid fa-star text-red-500"></i>
+                <p>5.0</p>
+              </div>
+              <div class="flex items-center justify-center gap-1">
+                <i class="fa-solid fa-eye"></i>
+                 <p>20</p>
+              </div>
+              <div>
+                <div class="flex items-center justify-center gap-1">
+                  <i class="fa-regular fa-heart"></i>
+                   <p>200</p>
+                </div>
+              </div>
+            </div>
+            <h2 class="card-title">New movie is released!</h2>
+            <p>Click the button to watch on Jetflix app.</p>
+            <div class="flex gap-1">
+              <h2 class="text-red-500">Price-$22.00</h2>
+              <div class="flex items-center justify-center gap-1">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>
+                  Delivery Fee: Free
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card lg:card-side bg-base-100 shadow-xl border p-3">
+          <figure class="rounded-md"><img src="image/8.png" alt="Movie" class="w-full"/></figure>
+          <div class="flex flex-col flex-auto justify-between gap-4 p-2">
+            <div class="flex gap-2">
+              <div class="flex items-center justify-center gap-1">
+                <i class="fa-solid fa-star text-red-500"></i>
+                <p>5.0</p>
+              </div>
+              <div class="flex items-center justify-center gap-1">
+                <i class="fa-solid fa-eye"></i>
+                 <p>20</p>
+              </div>
+              <div>
+                <div class="flex items-center justify-center gap-1">
+                  <i class="fa-regular fa-heart"></i>
+                   <p>200</p>
+                </div>
+              </div>
+            </div>
+            <h2 class="card-title">New movie is released!</h2>
+            <p>Click the button to watch on Jetflix app.</p>
+            <div class="flex gap-1">
+              <h2 class="text-red-500">Price-$22.00</h2>
+              <div class="flex items-center justify-center gap-1">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>
+                  Delivery Fee: Free
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card lg:card-side bg-base-100 shadow-xl border p-3">
+          <figure class="rounded-md"><img src="image/9.png" alt="Movie" class="w-full"/></figure>
+          <div class="flex flex-col flex-auto justify-between gap-4 p-2">
+            <div class="flex gap-2">
+              <div class="flex items-center justify-center gap-1">
+                <i class="fa-solid fa-star text-red-500"></i>
+                <p>5.0</p>
+              </div>
+              <div class="flex items-center justify-center gap-1">
+                <i class="fa-solid fa-eye"></i>
+                 <p>20</p>
+              </div>
+              <div>
+                <div class="flex items-center justify-center gap-1">
+                  <i class="fa-regular fa-heart"></i>
+                   <p>200</p>
+                </div>
+              </div>
+            </div>
+            <h2 class="card-title">New movie is released!</h2>
+            <p>Click the button to watch on Jetflix app.</p>
+            <div class="flex gap-1">
+              <h2 class="text-red-500">Price-$22.00</h2>
+              <div class="flex items-center justify-center gap-1">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>
+                  Delivery Fee: Free
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-dashed border-b-2 border-t-2 p-4 mt-8 mb-8 border-gray-300 text-center">
+        <p class="text-2xl font-bold">
+          Clients Questions
+        </p>
+          This element has a dashed border only on the bottom (2px thickness)
+        </div>
+      <div class="lg:flex gap-4">
+        <div>
+          <img src="image/11.png" alt="">
+        </div>
+        <div class="mt-5">
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" checked="checked" /> 
+            <div class="collapse-title text-xl font-medium">
+              Our Equipment
+            </div>
+            <div class="collapse-content"> 
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, facere.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-medium">
+              Hockey Training
+            </div>
+            <div class="collapse-content"> 
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-medium">
+              Private Lessons
+            </div>
+            <div class="collapse-content"> 
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-medium">
+              Ski Touring
+            </div>
+            <div class="collapse-content"> 
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-medium">
+              Booking
+            </div>
+            <div class="collapse-content"> 
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-medium">
+              Pricing
+            </div>
+            <div class="collapse-content"> 
+              <p>hello</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-dashed border-b-2 border-t-2 p-4 mt-8 mb-8 border-gray-300 text-center">
+        <p class="text-2xl font-bold">
+          Get In Touch
+        </p>
+          This element has a dashed border only on the bottom (2px thickness)
+        </div>
+
+      <div class="lg:flex gap-5 mt-20">
+        <div class="border rounded-md p-5">
+          <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+              <img src="image/Group 1171275317.png" alt="" class="w-10">
+              <h2 class="card-title">Card title!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+          </div>
+          <div class="card bg-base-100 my-4 shadow-xl">
+            <div class="card-body">
+              <img src="image/Group 1171275318.png" alt="" class="w-10">
+              <h2 class="card-title">Card title!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+              <img src="image/Group 1171275321.png" alt="" class="w-10">
+              <h2 class="card-title">Card title!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col w-full h-1000">
+          <div class="lg:flex gap-5 mb-5 justify-between">
+            <div class="w-full">
+              <p class="mb-3">
+                Your Name
+              </p>
+              <input type="text" placeholder="Type here" class="h-12 border border-transparent bg-gray-300 rounded-md flex-shrink-0 px-4 text-base leading-6 w-full max-w-xs" />
+  
+            </div>
+            <div class="w-full">
+              <p class="mb-3">
+                Your Email
+              </p>
+              <input type="text" placeholder="Type here" class="h-12 border border-transparent bg-gray-300 rounded-md flex-shrink-0 px-4 text-base leading-6 w-full max-w-xs" />
+  
+            </div>
+          </div>
+          <div class="lg:flex gap-5 mb-5 justify-between">
+            <div class="w-full">
+              <p class="mb-3">
+                Subject
+              </p>
+              <input type="text" placeholder="Type here" class="h-12 border border-transparent bg-gray-300 rounded-md flex-shrink-0 px-4 text-base leading-6 w-full max-w-xs" />
+  
+            </div>
+            <div class="w-full">
+              <p class="mb-3">
+                Phone Number
+              </p>
+              <input type="text" placeholder="Type here" class="h-12 border border-transparent bg-gray-300 rounded-md flex-shrink-0 px-4 text-base leading-6 w-full max-w-xs" />
+  
+            </div>
+          </div>
+          <div class="flex-grow">
+            <p>
+              Message
+            </p>
+            <label class="form-control h-full bg-gray-300">
+              <textarea class="textarea textarea-bordered h-full bg-gray-300" placeholder="Bio"></textarea>
+            </label>
+          </div>
+          <button class="btn btn-block mt-10 bg-red-500 text-white">block</button>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center items-center my-10 bg-gray-300 p-10 gap-5 rounded-md">
+        <div>Social Media</div>
+        <div class="flex gap-5">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </div>
+    </main>
+    
+    <footer class="footer p-10 bg-base-200 text-base-content">
+      <aside>
+        <h3>Get in Touch</h3>
+        <p>ACME Industries Ltd.<br>Providing reliable tech since 1992</p>
+        <div class="flex gap-1">
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+          <p>hockey@support.com</p>
+        </div>
+        <div class="flex gap-1">
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+          <p>hockey@support.com</p>
+        </div>
+      </aside> 
+      <nav>
+        <h6 class="footer-title">Services</h6> 
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav> 
+      <nav>
+        <h6 class="footer-title">Company</h6> 
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav> 
+      <nav>
+        <h6 class="footer-title">Legal</h6> 
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </footer>
 </body>
 </html>
